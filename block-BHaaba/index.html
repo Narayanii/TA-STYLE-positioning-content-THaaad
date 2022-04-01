@@ -10,9 +10,9 @@
 <body>
 <section>
 <header>
-  <div class="box">
-<div class="container left">Cotton On</div>
-<nav class="nav right">
+  <div class="header">
+<div class="brand">Cotton On</div>
+<nav class="nav">
   <a href="#">Home </a>
 <a href="#">About</a>
 <a href="#">Contect</a>
@@ -20,30 +20,32 @@
 </div>
 </header>
 </section>
-</header>
 <main>
-<div class="column">
-  <img src="assignment-asset.jpg" alt="assignment" > http://127.0.0.1:5500/assignment-asset.jpg
-  <p class="para-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis doloremque voluptates, doloribus, sed eveniet, impedit explicabo nam libero quae beatae cum magnam aliquam eius quibusdam sint corporis recusandae quisquam vel.</p>
-</div>
-</div>  
-<div class="column">
-  <img class="img-2" src="assignment-float(2).jpg" alt="assignment"> http://127.0.0.1:5500/assignment-asset.jpg
-  <p class="para-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex earum ratione, error reprehenderit recusandae, consequuntur, tenetur explicabo amet provident sint vero assumenda facere iste eius commodi. Deleniti, quo? Hic, molestiae.</p>
-</div> 
-<div class="column">
-  <img src="assignment-floatimg.jpg" alt="assignment"> http://127.0.0.1:5500/assignment-floatimg.jpg
-  <p class="para-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, mollitia tempora! Iste placeat ad consequatur nobis pariatur consectetur quibusdam ipsam temporibus in itaque id iure, autem rerum illo excepturi fugit.</p>
-</div> 
-</main>
-<section>
-<footer class="footer">  Instagram 
-  Twitter
-</footer>
+<section class="section">
+  <div class="container clearfix">
+    <article class="colm">
+   <img class="img" src="assignment-asset.jpg" alt="flower"> 
+	    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, suscipit. Molestiae rem ipsam modi. Porro unde provident quidem accusantium itaque ex sapiente libero voluptatibus tempora qui. Voluptates quas molestiae voluptatem.</p>
+    </article>
+    <article class="colm">
+  <img class="img" src="assignment-float(2).jpg" alt="flower">
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quisquam consequuntur. Quos nemo molestias doloremque sequi impedit distinctio sit praesentium eaque laudantium nostrum? Minus incidunt aut ad saepe iure suscipit.</p>
+    </article>
+    <article class="colm">
+      <img class="img" src="assignment-floatimg.jpg" alt="flower">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, distinctio corporis velit recusandae eligendi quasi enim veniam magni non consequuntur cumque praesentium assumenda explicabo, rem delectus harum ducimus nesciunt dignissimos!</p>
+    </article>
+  </div>
 </section>
-  </section> 
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+</main>
+<footer class="footer">
+  <small>&copy; cotton on</small>
+  <nav>
+    <a href="#">instagram</a>
+    <a href="#">twitter</a>
+  </nav>
+</footer>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 </body>
 </html>
 
@@ -95,60 +97,79 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* custome styles */
 
-body { font-size: 16px;
+/* Custom Styles */
+
+*,
+*::before, 
+*::after { box-sizing: border-box; }
+
+body {
 line-height: 1.5;
-background-color: rgb(235, 224, 211);
-
+font-size: 16px;
 }
+/* Header */
 
-.box { color: aliceblue;
+.header { padding: 16px 0;
 background-color: rgb(151, 88, 5);
-padding: 30px;
 height: 100px;
-font-size: 20px;
+max-width: 1500px;
+line-height: 1.5;
+}
+.brand { font-style: italic;
 font-family: fantasy;
-
-}
-.container { 
+ color: aliceblue;
 float: left;
+margin-left: 20px;
 }
-.nav { 
+.nav { font-family: fantasy;
+ margin-right: 10px;
 float: right;
 }
-a { margin: 10px;
+
+a { margin: 5px;
 color: aliceblue;
-}
-a:link {
 text-decoration: none;
 }
-/* main */
-.column{ line-height: 1.5;
-width: 350px;
-color: rgb(109, 78, 39);
-margin-left: 30px;
 
+/* Article */
+
+.section { height: 500px;
+background-color: rgb(235, 224, 211);
 }
-img { margin-left: 50px;
+.container { max-width: 1200px;
+line-height: 1.5;
+font-size: 16px;
+margin: 0 auto;
+padding: 0 100px;
+}
+.clear:after{
+content:" ";
+display: table;
+}
+.clear:after {
+clear: both;
+}
+
+.colm { 
+ float: right;
 width: 300px;
-
+margin: 0.5%;
 }
-.para-1 { margin-left: 40px;
+.img {  margin-top: 10px;
+ object-fit: cover;
+width: 200px;
 }
-.img-2 {
-margin-top: 20px;
+p { 
+font-style: italic;
 }
-.para-2 {
-margin-left: 40px;
-}
-.para-3 { margin-left: 40px;
-
-}
-/* footer */
-
-.footer { font-family: fantasy;
-color: rgb(221, 164, 126);
-margin-left: 500px;
+/* Footer */
+.footer { color: aliceblue;
+font-family: fantasy;
+font-style: italic;
 padding: 20px;
+background-color:rgb(156, 86, 5);
+}
+.footer nav {  
+float: right;
 }
