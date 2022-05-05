@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+<header>
+  <div class="header">
+<div class="brand">Cotton On</div>
+<nav class="nav">
+  <a href="#">Home </a>
+<a href="#">About</a>
+<a href="#">Contect</a>
+</nav>
+</div>
+</header>
+</section>
+<main>
+<section class="section">
+  <div class="container clearfix">
+    <article class="colm">
+   <img class="img" src="assignment-asset.jpg" alt="flower"> 
+	    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, suscipit. Molestiae rem ipsam modi. Porro unde provident quidem accusantium itaque ex sapiente libero voluptatibus tempora qui. Voluptates quas molestiae voluptatem.</p>
+    </article>
+    <article class="colm">
+  <img class="img" src="assignment-float(2).jpg" alt="flower">
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quisquam consequuntur. Quos nemo molestias doloremque sequi impedit distinctio sit praesentium eaque laudantium nostrum? Minus incidunt aut ad saepe iure suscipit.</p>
+    </article>
+    <article class="colm">
+      <img class="img" src="assignment-floatimg.jpg" alt="flower">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, distinctio corporis velit recusandae eligendi quasi enim veniam magni non consequuntur cumque praesentium assumenda explicabo, rem delectus harum ducimus nesciunt dignissimos!</p>
+    </article>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <small>&copy; cotton on</small>
+  <nav>
+    <a href="#">instagram</a>
+    <a href="#">twitter</a>
+  </nav>
+</footer>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+</body>
+</html>
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Styles */
+
+*,
+*::before, 
+*::after { box-sizing: border-box; }
+
+body {
+line-height: 1.5;
+font-size: 16px;
+}
+/* Header */
+
+.header { padding: 16px 0;
+background-color: rgb(151, 88, 5);
+height: 100px;
+max-width: 1500px;
+line-height: 1.5;
+}
+.brand { font-style: italic;
+font-family: fantasy;
+ color: aliceblue;
+float: left;
+margin-left: 20px;
+}
+.nav { font-family: fantasy;
+ margin-right: 10px;
+float: right;
+}
+
+a { margin: 5px;
+color: aliceblue;
+text-decoration: none;
+}
+
+/* Article */
+
+.section { height: 500px;
+background-color: rgb(235, 224, 211);
+}
+.container { max-width: 1200px;
+line-height: 1.5;
+font-size: 16px;
+margin: 0 auto;
+padding: 0 100px;
+}
+.clear:after{
+content:" ";
+display: table;
+}
+.clear:after {
+clear: both;
+}
+
+.colm { 
+ float: right;
+width: 300px;
+margin: 0.5%;
+}
+.img {  margin-top: 10px;
+ object-fit: cover;
+width: 200px;
+}
+p { 
+font-style: italic;
+}
+/* Footer */
+.footer { color: aliceblue;
+font-family: fantasy;
+font-style: italic;
+padding: 20px;
+background-color:rgb(156, 86, 5);
+}
+.footer nav {  
+float: right;
+}
