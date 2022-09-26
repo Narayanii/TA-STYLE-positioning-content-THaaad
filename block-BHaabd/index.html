@@ -1,7 +1,139 @@
-<!-- 
-### Create a page according to the layout shown below
 
-![Positioning Content Exercise 1](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/positioning-content/ex-1.png)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Assignment</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Let The Mud Settle</h1>
+</header>
+<section class="container">
+ <p class="heading">About the book</p> 
+ <div class="content">
+ <p>introductory</p>
+ <p>the first book</p>
+ <p>pyears of waiting</p>
+ </div>
+<img class="brand" src="book-cover.png" alt="book-cover">
+</div>
+<p class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur accusantium enim voluptate assumenda, eaque odio recusandae voluptatibus at nam! Totam voluptatibus.</p>
+<div class="article">
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates iusto corrupti, voluptatem atque officiis est consequatur ad temporibus ullam eos nostrum alias ea aut harum vel quibusdam? Reiciendis, repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ducimus saepe tenetur deserunt ea minima, libero cupiditate consequatur et exercitationem rem nihil praesentium neque? Repudiandae magni adipisci aliquid consequuntur sint!</p>
+<br>
+<p class="sec-article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugit. A deleniti eveniet minus culpa. Magnam, voluptate esse accusantium numquam, ipsa, doloremque quia minus voluptas alias nemo laborum consectetur nobis?</p>
+<br>
+<br>
+<p class="short">Lorem ipsum dolor, amet impedit dignissimos modi voluptate vitae Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<br>
+<br>
+<p class="last-para"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, voluptates! Odit consequatur soluta molestias magnam voluptate architecto, laudantium itaque, nostrum iusto ratione repudiandae dolore aliquid, earum dolorum. Atque, praesentium molestias!</p>
+</div>
+</section>
+</body>
+</html>
 
-- Using CSS resets is necessary.
-- Use semantic tags and keep the nesting and indentation proper. -->
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Custome Styles */
+body {
+background-color: rgb(221, 214, 214);
+}
+/* Header Styles */
+h1 {
+font-size: 23px;
+font-style: oblique;
+text-align: center;
+padding: 30px;
+}
+/* Container */
+
+
+.container { width: 45%;
+height: 800px;
+background-color:antiquewhite;
+margin-left: 28%;
+}
+.heading { text-transform: capitalize;
+text-align: center;
+
+}
+.content { margin: 20px;
+line-height: 1.5;
+text-transform: capitalize;
+}
+
+.brand { width: 200px;
+height: 180px;
+}
+
+.lorem{ height: 10px;
+width:180px;
+line-height: 1.5;
+margin-bottom: 100px;
+}
+.content, .brand, .lorem {
+display: inline-block;
+vertical-align: middle;
+margin-left: 30px;
+}
+/* article */
+.article {
+margin: 80px;
+}
+.short {
+margin-left: 60px;
+}
+.last-para {
+margin-top: 10px;
+}
