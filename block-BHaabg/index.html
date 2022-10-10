@@ -1,15 +1,187 @@
-<!-- ### Exercise
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment</title>
+<link rel="stylesheet" href="style.css">
+<! -- CSS -->
 
-1. Create a simple page having a header, main content, and a footer.
+</head>
+<body>
+  <header class="header">
+<div class="container clearfix">
+<a class="brand" href="#">
+<h1>Sri Anish</h1>
+</a>
+<nav class="nav">
+<a href="#"> About Sri Anish </a>
+<a href="#"> Quotes</a>
+<a href="#">Connect</a>
+</nav>
+</div>
+<main>
+<! -- Hero Section -->
+<section class="hero">
+<article>
+<div class="container">
+<h2 class="hero-heading"> Spiritual teacher, mentor, corporate leader and a friend to all.</h2>
+</div>
+<img src="Assets/R6__5078.jpeg">
+</article>
+</section>
+</main>
+<! -- Gallery Section -->
+<main>
+<section class="container">
+<div class="gallery">
+<img src="Assets/DSC01456-2.jpeg" alt="quote">
+<img src="Assets/R6__5099.jpeg" alt="quote">
+<img src="Assets/R6__5106.jpeg" alt="quote">
+</div>
+</section>
+</main>
+<! -- Footer -->
+<main>
+<section class="container">
+<footer class="footer">
+<a href="#"> Facebook</a>
+<a href="#"> Instagram</a>
+</footer>
+</section>
+</main>
+<button class="btn-fixed">
+<a href="#">Home</a>
+</button>
+</body>
+</html>
+  
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-2. Inside the header keep the logo to the left and all the navigation to the right.
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Custom Styles */
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+body { 
+line-height: 1.5;
+font-size: 16px;
+font-family: "Roboto", sans-serif;
+}
+/* Container */
 
-3. The header must be fixed at the top of the page.
+.container { padding: 0 32px;
+max-width: 1200px;
+overflow-x: hidden;
+overflow-y: auto;
+}
 
-4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
+/* Clearfix */
+.clearfix::before,
+.clearfix::after{
+content: " ";
+display: table;
+}
+.clearfix::after {
+clear: both;
+}
+/* Header */
+.header { position: fixed;
+right: 00px;
+left: 00px;
+background-color: rgba(184, 128, 16, 0.733);
+height: 72px;
+line-height: 72px;
 
-5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
+}
 
-6. After the gallery section footer will come.
+.brand { text-decoration: none;
+float: left;
+position: fixed;
+}
+.brand h1 {
+color: blanchedalmond;
+font: 20px;
+}
+.nav { position: fixed;
+float: right;
+right: 30px;
+}
+.nav a { 
+text-decoration: none;
+color: blanchedalmond;
+font: 20px;
+margin-left: 35px;
+}
+/* Hero */
 
-7. Take a circular button at the right bottom corner of the page and keep its position fixed. The button should always take to the top of the page once clicked. -->
+.hero-heading { float: left;
+margin-top: 90px;
+}
+img { float: right;
+width: 40%;
+margin-top: 90px;
+margin-right: 80px;
+}
+/* Gallery */
+.gallery 
+{ margin-right: 300px;
+display: inline-flex;
+
+
+}
+/* Footer */
+.footer { 
+color: black;
+text-align: center;
+margin-left: 10px;
+
+}
