@@ -2,62 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assignment</title>
-<link rel="stylesheet" href="style.css">
-<! -- CSS -->
+  <title>ASSIGNMENT</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Assets/stylesheet/style.css"/>
 
 </head>
-<body>
+<body id="top">
   <header class="header">
-<div class="container clearfix">
-<a class="brand" href="#">
-<h1>Sri Anish</h1>
-</a>
-<nav class="nav">
-<a href="#"> About Sri Anish </a>
-<a href="#"> Quotes</a>
-<a href="#">Connect</a>
+<div class="container">
+<a class="brand clearfix" href="#">
+<img src="Assets/saadho-new.jpeg" alt="brand logo"/>
+ </a>
+<nav class="nav clearfix">
+<a href="#">About</a>
+<a href="#"> Blog</a>
+<a href="#">Gallery</a>
 </nav>
 </div>
+</header>
 <main>
-<! -- Hero Section -->
-<section class="hero">
-<article>
-<div class="container">
-<h2 class="hero-heading"> Spiritual teacher, mentor, corporate leader and a friend to all.</h2>
+<article class="article">
+<div class="container clearfix">
+<div class="column article-col">
+<h1 class= "article-headng">Heading of our page</h1>
+<p class="article-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur officia corrupti accusantium natus id error earum inventore tempora, nihil minima sunt perferendis, sequi quo provident ad explicabo quod consequuntur quasi?
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus sed debitis consectetur, doloribus molestias, tenetur, veritatis at qui ex minus exercitationem non eos? Vero dolor eaque corporis vel voluptatum adipisci.
+</p>
 </div>
-<img src="Assets/R6__5078.jpeg">
+<div>
+</div>
+<div class="column">
+<img class="article-img" src="Assets/DSC01456-2.jpeg" alt="hand">
+</div>
+</div>
 </article>
-</section>
 </main>
-<! -- Gallery Section -->
-<main>
-<section class="container">
-<div class="gallery">
-<img src="Assets/DSC01456-2.jpeg" alt="quote">
-<img src="Assets/R6__5099.jpeg" alt="quote">
-<img src="Assets/R6__5106.jpeg" alt="quote">
+<! -- Gallery -->
+<section class="gallery clearfix">
+<div class="container">
+<div class="column-3">
+<img src="Assets/DSC06216-4.jpeg" alt="pic-01">
+</div>
+<div class="column-3">
+<img src="Assets/R6__5078.jpeg" alt="pic02">
+</div>
+<div class="column-3">
+<img src="Assets/R6__5099.jpeg" alt="pic03">
+</div>
+</div>
 </div>
 </section>
-</main>
-<! -- Footer -->
-<main>
-<section class="container">
 <footer class="footer">
-<a href="#"> Facebook</a>
-<a href="#"> Instagram</a>
+<div class="container">
+<nav>
+<a href="#">Facebook</a>
+<a href="#">Instagram</a>
+</nav>
+</div>
 </footer>
-</section>
-</main>
-<button class="btn-fixed">
-<a href="#">Home</a>
-</button>
+<a class="top-btn" href="#top"> Top
+</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 </body>
 </html>
-  
-  /* http://meyerweb.com/eric/tools/css/reset/ 
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -111,77 +122,96 @@ table {
 *::after {
 box-sizing: border-box;
 }
-body { 
-line-height: 1.5;
-font-size: 16px;
-font-family: "Roboto", sans-serif;
-}
 /* Container */
-
-.container { padding: 0 32px;
+.container {
 max-width: 1200px;
-overflow-x: hidden;
-overflow-y: auto;
+margin: 0 auto;
+padding: 0 32px;
 }
-
 /* Clearfix */
 .clearfix::before,
 .clearfix::after{
-content: " ";
+content: "";
 display: table;
 }
-.clearfix::after {
+.clearfix::after{
 clear: both;
 }
 /* Header */
-.header { position: fixed;
-right: 00px;
-left: 00px;
-background-color: rgba(184, 128, 16, 0.733);
-height: 72px;
-line-height: 72px;
+.header { background-color: white;
+padding: 16px;
 
 }
-
-.brand { text-decoration: none;
+.brand {
 float: left;
-position: fixed;
 }
-.brand h1 {
-color: blanchedalmond;
-font: 20px;
+.brand img { 
+width: 50%;
+height: auto;
 }
-.nav { position: fixed;
+.nav { margin-top: 30px;
 float: right;
-right: 30px;
 }
-.nav a { 
-text-decoration: none;
-color: blanchedalmond;
-font: 20px;
-margin-left: 35px;
-}
-/* Hero */
 
-.hero-heading { float: left;
-margin-top: 90px;
+.nav a { margin-left: 20px;
+color: black;
+text-decoration: none;
 }
-img { float: right;
-width: 40%;
-margin-top: 90px;
-margin-right: 80px;
+/* Article */
+.article {
+background-color: blanchedalmond;
+padding: 80px 0;
+}
+.article-heading {
+font: 36px;
+margin-bottom: 16px;
+}
+.article-text {
+font-size: 20px;
+line-height: 1.5;
+}
+.column {
+float: left;
+width: 50%;
+}
+.article-img {
+width: 100%;
+
+}
+.article-col {
+padding-right: 32px;
 }
 /* Gallery */
-.gallery 
-{ margin-right: 300px;
-display: inline-flex;
-
-
+.gallery {
+padding: 60px;
 }
-/* Footer */
-.footer { 
-color: black;
+.column-3 { float: left;
+width: 30%;
+margin: 1.5%;
+}
+.gallery img {
+width: 100%;
+}
+.footer {
+background-color: blanchedalmond;
+padding: 32px 0;
 text-align: center;
-margin-left: 10px;
-
+}
+.footer a { color: black;
+margin-right: 10px;
+text-decoration:none;
+}
+/* Top Button */
+.top-btn { text-align: center;
+ display: inline-block;
+width: 48px;
+height: 48px;
+color: black;
+background-color: chocolate;
+border-radius: 50%;
+position: fixed;
+right: 32px;
+bottom: 32px;
+font-size: 15px;
+line-height: 48px;
 }
